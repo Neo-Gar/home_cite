@@ -1,0 +1,47 @@
+.notes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.notes-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+    background-color: #2b3035;
+    color: white;
+    text-align: left;
+    padding: 1rem;
+}
+
+.notes-item-text {
+    flex: 0 1 auto;
+}
+
+.notes-item h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.notes-item p {
+    font-size: 1.10rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.notes-item-bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.notes-item-autor {
+    font-size: 1rem;
+    font-style: italic;
+}

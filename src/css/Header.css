@@ -1,0 +1,70 @@
+.App-header {
+    background-color: black;
+    backdrop-filter: saturate(180%) blur(20px);
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+
+}
+
+.header-container {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+    margin: auto;
+    align-items: center;
+}
+
+.header-container a {
+    position: relative;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.header-container a:not(:first-child):after  {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    content: "";
+    transition: width 0.2s ease-out;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-container a:hover:after,
+.header-container a:focus:after{
+    width: 100%;
+}
+
+.header-logo {
+    width: 48px;
+    height: 48px;
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+
+.header-logo img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.header-logo, .header-logo a {
+    mix-blend-mode: exclusion;
+    border-radius: 1px;
+    transition: 0.7s ease;
+}
+
+.header-logo:hover, .header-logo a:hover {
+  transform: scale(1.1);
+}
+
