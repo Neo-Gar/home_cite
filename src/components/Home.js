@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 
 class Home extends Component {
     render() {
+        document.title = this.props.title
         return (
             <div className="home">
                 <div className="main-block">

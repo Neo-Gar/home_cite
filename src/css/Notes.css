@@ -45,3 +45,47 @@
     font-size: 1rem;
     font-style: italic;
 }
+
+/*Adaptive*/
+@media (min-width: 2000px) {
+    .notes-grid {
+        min-height: 30vh;
+    }
+
+    .notes-item h3 {
+        font-size: 3rem;
+    }
+    .notes-item p {
+        font-size: 1.50rem;
+    }
+    .notes-item-autor {
+        font-size: 1.50rem;
+    }
+    .btn-edit svg {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .notes-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .notes-item {
+        border-radius: 1rem;
+        margin: .3rem;
+    }
+    .notes-item h3 {
+        font-size: 1.3rem;
+    }
+    .notes-item p {
+        font-size: 1rem;
+    }
+    .notes-item-autor {
+        font-size: 0.8rem;
+    }
+    .btn-edit svg {
+        height: 26px;
+        width: 26px;
+    }
+}

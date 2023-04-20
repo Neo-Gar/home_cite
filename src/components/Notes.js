@@ -16,6 +16,7 @@ class Notes extends Component {
       .then(data => this.setState({ data }))
   }
     render() {
+        document.title = this.props.title;
         return (
             <div className="notes">
                 <div className="main-block">
@@ -26,7 +27,7 @@ class Notes extends Component {
                 </div>
                 <div className="notes-grid">
                     {this.state.data.map(item =>
-                    <div className="notes-item">
+                    <div className="notes-item" key={item.id}>
                         <div className="notes-item-text">
                             <h3>{item.header}</h3>
                             <p>{item.text}</p>

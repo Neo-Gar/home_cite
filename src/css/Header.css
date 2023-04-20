@@ -68,3 +68,13 @@
   transform: scale(1.1);
 }
 
+/*Adaptive*/
+@media (min-width: 2000px) {
+    .header-container {
+        font-size: 1.3rem;
+    }
+    .header-logo {
+        width: 52px;
+        height: 52px;
+    }
+}

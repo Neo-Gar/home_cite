@@ -2,8 +2,15 @@ main {
     padding: 0 3rem;
     margin: 0 auto;
     max-width: 2560px;
+    min-height: 100vh;
 }
 
 body {
     background-color: #212529;
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 0 1rem;
+    }
 }

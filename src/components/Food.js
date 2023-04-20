@@ -1,6 +1,5 @@
-import React, {Component, useState} from 'react';
+import React, {Component} from 'react';
 
-import burger_img from "../img/test-photo.jpg"
 import {FaRegEdit} from "react-icons/fa";
 
 class Food extends Component {
@@ -19,6 +18,7 @@ class Food extends Component {
   }
 
     render() {
+        document.title = this.props.title;
         return (
             <div className="food">
                 <div className="main-block">

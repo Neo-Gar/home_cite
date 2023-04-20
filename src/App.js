@@ -25,9 +25,9 @@ class App extends Component {
             <Header logo={logo}/>
             <main>
                 <Routes>
-                    <Route path="*" element={<Home/>} />
-                    <Route path="/food" element={<Food/>} />
-                    <Route path="/notes" element={<Notes/>} />
+                    <Route path="*" element={<Home title="Домашний Сайт"/>} />
+                    <Route path="/food" element={<Food title="Еда"/>} />
+                    <Route path="/notes" element={<Notes title="Записки"/>} />
                 </Routes>
             </main>
             <Footer logo={logo}/>
